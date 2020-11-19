@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipeApp/constants.dart';
+import 'package:recipeApp/components/rouned_button.dart';
 
 class PostRecipe extends StatelessWidget {
   static String id = "PostScreen";
@@ -47,14 +48,11 @@ class PostRecipe extends StatelessWidget {
                 maxLines: null,
               ),
             ),
-            new OutlineButton(
-              onPressed: null,
-              child: Text("Submit"),
-              // hoverColor: Color(0xff081d42),
-              color: Color(0xff081d42),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30.0),
-              ),
+            RoundedButton(
+              labelText: "Submit",
+              size: 20.0,
+              onPressedFunction: () {},
+              padding: EdgeInsets.all(10.0),
             )
           ],
         ),
