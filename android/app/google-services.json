@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "565643035542",
+    "firebase_url": "https://recipeapp-fd633.firebaseio.com",
+    "project_id": "recipeapp-fd633",
+    "storage_bucket": "recipeapp-fd633.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565643035542:android:ce5662c5171e31eb57d3b7",
+        "android_client_info": {
+          "package_name": "com.example.recipeApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565643035542-68r8dp42gmijl4sau61dhrqrgehn81th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGis5b1LSzWYG1Mo3g6dGVvy-fPkm69Zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565643035542-68r8dp42gmijl4sau61dhrqrgehn81th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

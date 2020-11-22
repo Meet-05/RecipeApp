@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipeApp/components/bottom_bar.dart';
+
 import 'package:recipeApp/components/rouned_button.dart';
 
 class FavoriteScreen extends StatelessWidget {
@@ -54,7 +54,6 @@ class FavoriteScreen extends StatelessWidget {
           ),
         )
       ]),
-      bottomNavigationBar: BottomBar(),
     );
   }
 }

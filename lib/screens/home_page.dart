@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:recipeApp/itemcardData.dart';
 import 'package:recipeApp/constants.dart';
-import 'package:recipeApp/components/bottom_bar.dart';
+import 'package:recipeApp/screens/post_recipe.dart';
+import 'package:recipeApp/screens/drawer_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+final _auth = FirebaseAuth.instance;
 
 final itemcardList = ItemCardData();
 
@@ -11,26 +15,33 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Color(0xFF1C1C48),
+          onPressed: () {
+            Navigator.pushNamed(context, PostRecipe.id);
+          },
+          child: Icon(
+            Icons.add,
+            size: 50.0,
+          ),
+        ),
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.black,
           actions: [
             RawMaterialButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, PostRecipe.id);
+              },
               child: CircleAvatar(
                 radius: 30.0,
                 backgroundImage: AssetImage('images/dp.jpg'),
               ),
             )
           ],
-          leading: IconButton(
-              icon: Icon(
-                Icons.arrow_back,
-                color: Colors.black,
-              ),
-              onPressed: () {}),
           title: Container(
             margin: const EdgeInsets.symmetric(vertical: 10.0),
             child: TextField(
+              style: kHomePageRecipe.copyWith(color: Colors.white),
               decoration: kTextFieldDecoration.copyWith(
                   hintText: 'Search for a recipe'),
             ),
@@ -41,6 +52,6 @@ class HomePage extends StatelessWidget {
             ItemCardData(),
           ],
         ),
-        bottomNavigationBar: BottomBar());
+        drawer: DrawerScreen());
   }
 }

@@ -6,8 +6,11 @@ import 'screens/sign_up.dart';
 import 'screens/post_recipe.dart';
 import 'screens/profile_screen.dart';
 import 'screens/favorite_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 

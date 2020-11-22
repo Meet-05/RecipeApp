@@ -18,7 +18,6 @@ class _RecipeDetailCardState extends State<RecipeDetailCard> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     textToShow = ingrediants;
     colour = Colors.grey;

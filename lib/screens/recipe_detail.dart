@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:recipeApp/components/bottom_bar.dart';
+
 import 'package:recipeApp/itemcardData.dart';
 import 'package:recipeApp/constants.dart';
 import 'package:recipeApp/components/recipe_detail_card.dart';
@@ -42,7 +42,6 @@ class RecipeDetail extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomBar(),
     );
   }
 }
